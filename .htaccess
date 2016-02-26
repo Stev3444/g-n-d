@@ -1,0 +1,4 @@
+# Alle Anfragen gehen über die index.php. Dort liegt die zentrale Verwaltung aller Routen.
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]
